@@ -6,7 +6,15 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <div>
       <header>
-        <Link href="/">HomeHomeHome</Link>
+        <Link href="/">
+          <a>
+            Home
+            <span className="memo">
+              &lt;-
+              これ_app.tsxにかかないでホームの時は表示させないようにハンドリング
+            </span>
+          </a>
+        </Link>
       </header>
       <Component {...pageProps} />
     </div>

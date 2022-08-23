@@ -41,6 +41,20 @@ const Home: NextPage = () => {
               <Link href="/research">Research</Link>
             </li>
             <li>
+              {" "}
+              Works
+              <span className="memo">
+                (mdファイルからデコードする機能を実装中)
+              </span>
+              <ul>
+                <li>NxPC.Live vol.55 メインビジュアル制作</li>
+                <li>NxPC.Live vol.56 メインビジュアル制作</li>
+                <li>NxPC.Live vol.57 メインビジュアル制作</li>
+                <li>School For Regenerative Design 展示物制作</li>
+                <li>個人制作: ChiritsumoChallenge</li>
+              </ul>
+            </li>
+            <li>
               <Link href="/sketch">Sketch</Link>
             </li>
             <li>
@@ -51,6 +65,7 @@ const Home: NextPage = () => {
 
         <div className={styles.item}>
           <h2>Work in Progress</h2>
+          <p>ポートフォリオ制作に関連したnotionリンクはこちら</p>
           <ul>
             <li>
               <a href="https://ripple-shock-17d.notion.site/Subject-9817da8d5fe44b81b969fe904d30e77c">
@@ -84,18 +99,7 @@ const Home: NextPage = () => {
         </div>
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+      <footer className={styles.footer}></footer>
     </div>
   );
 };

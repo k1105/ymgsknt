@@ -35,6 +35,14 @@ const About: NextPage = () => {
           <a href="https://twitter.com/ymgsknt">twitter</a>
         </li>
       </ul>
+      <div className="memo">
+        <h3>About This Page</h3>
+        <p>自己紹介が掲載される</p>
+        <h3>Concern</h3>
+        <ul>
+          <li>自分の履歴ってどこから・どの観点から書いた方がいいんですか？</li>
+        </ul>
+      </div>
     </div>
   );
 };

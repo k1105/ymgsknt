@@ -27,6 +27,19 @@ const Research: NextPage = () => {
           </a>
         </li>
       </ul>
+      <div className="memo">
+        <h3>About This Page</h3>
+        <p>
+          今Work in
+          Progressでこんなことやってますという公開をするときのページ。もうちょっとこのページの存在意義についてはちゃんと考える必要がある。現状はnotionとかで外向けに公開しているドキュメントのリンクとかを貼っている。
+        </p>
+        <h3>Concern</h3>
+        <ul>
+          <li>
+            どういうコラボレーションを期待するのか？それが達成されるためにはどんなインターフェースが必要なのか？
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };
