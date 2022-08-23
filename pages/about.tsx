@@ -17,6 +17,24 @@ const About: NextPage = () => {
       <a href="https://ripple-shock-17d.notion.site/About-088f2c6e41184775b02a3c6f49c5ced8">
         &gt; notion &lt;
       </a>
+
+      <h2>Links</h2>
+      <ul>
+        <li>
+          <a href="https://www.pinterest.jp/kanapon1105/kanatayamagishi-works/">
+            Pinterest
+          </a>
+        </li>
+        <li>
+          <a href="https://note.com/painintheass">note</a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/ymgsknt/">instagram</a>
+        </li>
+        <li>
+          <a href="https://twitter.com/ymgsknt">twitter</a>
+        </li>
+      </ul>
     </div>
   );
 };

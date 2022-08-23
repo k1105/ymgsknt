@@ -17,6 +17,11 @@ const Sketch: NextPage = () => {
             Digitalize(IAMAS OpenHouse2022)
           </a>
         </li>
+        <li>
+          <a href="https://k1105.github.io/0605_eee_prototype/">
+            Tiny Interaction
+          </a>
+        </li>
       </ul>
     </div>
   );
