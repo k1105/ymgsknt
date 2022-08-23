@@ -92,7 +92,9 @@ const Home: NextPage = () => {
               </a>
             </li>
             <li>
-              <a href="">Memo</a>
+              <a href="https://ripple-shock-17d.notion.site/Memo-7aebaf03fa57416f91ea5749e35adfd3">
+                Memo
+              </a>
             </li>
             <li>
               <a href="https://ripple-shock-17d.notion.site/References-81f416bbc11a4c6a80f0e4c1552af734">
