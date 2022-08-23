@@ -47,7 +47,11 @@ const Home: NextPage = () => {
                 (mdファイルからデコードする機能を実装中)
               </span>
               <ul>
-                <li>NxPC.Live vol.55 メインビジュアル制作</li>
+                <li>
+                  <Link href="/works/nxpc-vol55-main-visual">
+                    NxPC.Live vol.55 メインビジュアル制作
+                  </Link>
+                </li>
                 <li>NxPC.Live vol.56 メインビジュアル制作</li>
                 <li>NxPC.Live vol.57 メインビジュアル制作</li>
                 <li>School For Regenerative Design 展示物制作</li>
