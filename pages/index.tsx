@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import Link from "next/link";
 
 const Home: NextPage = () => {
   return (
@@ -14,40 +15,70 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Hello <a href="https://nextjs.org">World</a> !
+          ここから<a href="https://twitter.com/KanataYamagishi">Twitter</a>
+          にジャンプします
         </h1>
+        <p className={styles.description}>
+          Kanata Yamagishi&apos;s Excellent Portfolio: WorkInProgress
+        </p>
+        <p>
+          見てて気になるな〜とかある人はここから -&gt;{" "}
+          <a href="https://github.com/k1105/ymgsknt">github</a>
+        </p>
 
-        <p className={styles.description}>これからじゃ！</p>
+        <Link href="/research">Research</Link>
+        <Link href="/sketch">Sketch</Link>
+        <Link href="/about">About</Link>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+        <h2>Work in Progress</h2>
+        <ul>
+          <li>
+            <a href="https://ripple-shock-17d.notion.site/Subject-9817da8d5fe44b81b969fe904d30e77c">
+              Subject
+            </a>
+          </li>
+          <li>
+            <a href="https://ripple-shock-17d.notion.site/Style-1570bc84ac004e57a6b53dfdedebb0cf">
+              Style
+            </a>
+          </li>
+          <li>
+            <a href="https://ripple-shock-17d.notion.site/Tech-1ec6fdea3e5e4e5cb06d6158fd1bf0de">
+              Tech
+            </a>
+          </li>
+          <li>
+            <a href="https://ripple-shock-17d.notion.site/Contents-e241f7816bbe4118bc55cb32f5e2c84e">
+              Contents
+            </a>
+          </li>
+          <li>
+            <a href="">Memo</a>
+          </li>
+          <li>
+            <a href="https://ripple-shock-17d.notion.site/References-81f416bbc11a4c6a80f0e4c1552af734">
+              References
+            </a>
+          </li>
+        </ul>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+        <h2>Links</h2>
+        <ul>
+          <li>
+            <a href="https://www.pinterest.jp/kanapon1105/kanatayamagishi-works/">
+              Pinterest
+            </a>
+          </li>
+          <li>
+            <a href="https://note.com/painintheass">note</a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/ymgsknt/">instagram</a>
+          </li>
+          <li>
+            <a href="https://twitter.com/ymgsknt">twitter</a>
+          </li>
+        </ul>
       </main>
 
       <footer className={styles.footer}>
