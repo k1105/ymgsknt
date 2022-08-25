@@ -3,7 +3,8 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
-import PageContent from "./sources/pageContent";
+import PageContent from "./sources/spinecho/pageContent";
+import PageContent2 from "./sources/portfolio/pageContent2";
 
 const Home: NextPage = () => {
   return (
@@ -14,33 +15,18 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {(() => {
+      {/* {(() => {
         const hoge = [];
-        for (let i = 0; i < 10; i++) {
+        for (let i = 0; i < 5; i++) {
           hoge.push(<PageContent />);
+          hoge.push(<PageContent2 />);
         }
         return hoge;
-      })()}
+      })()} */}
+      <PageContent />
+      <PageContent2 />
 
       <main className={styles.main}>
-        <div className={styles.item}>
-          <h2>はじめに</h2>
-          <p className={styles.paragraph}>
-            半年くらい前からポートフォリオを作成したいという気持ちが湧き上がってはいたものの、なかなか手が出せずにいた。
-            <br />
-            誰がみるのか、どのように閲覧するのか、どんなコンテンツが入るのか、今この瞬間だけではなく今後も耐えうるテンプレートは如何様に用意するべきか...{" "}
-            <br />
-            一方が立っても一方が立たない状態が続く中で、どうやらこれは頭で考えるにはあまりに複雑な問題構造だぞという結論に至ったのがつい先日のこと。
-            <br />
-            そこでもうwebページとして立ち上げてしまい、少しずつ書き換えていくというスタイルで問題を解きほぐしながら作成していくことに決めた。
-            <br />
-            また、その制作過程からデプロイしてしまい、移動中やふとした時に閲覧し、ああこれはひどいwebサイトだ、ということを日々意識しながら生活することにした。
-          </p>
-          <p>
-            見てて気になるな〜とかある人はここから -&gt;{" "}
-            <a href="https://github.com/k1105/ymgsknt">github</a>
-          </p>
-        </div>
         <div className={styles.item}>
           <h2>Pages</h2>
 
