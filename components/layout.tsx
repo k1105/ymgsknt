@@ -18,7 +18,7 @@ export default function Layout({ children, ogp, title }: Props) {
           content="Learn how to build a personal website using Next.js"
         />
         <meta property="og:image" content={ogp} />
-        <meta name="og:title" content={siteTitle} />
+        <meta name="og:title" content={title} />
         <meta name="twitter:card" content="summary_large_image" />
         <title>{title} | Kanata Yamagishi Portfolio</title>
       </Head>
