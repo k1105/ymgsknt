@@ -1,5 +1,6 @@
 import Layout from "../../components/layout";
 import { getAllWorkIds, getWorkData } from "../../lib/works";
+import Image from "next/image";
 
 type Params = {
   /* このへん動いてはいるものの、なんでこうしないとエラーを吐くのかわからない */
@@ -15,6 +16,7 @@ type WorkData = {
     title: string;
     id: string;
     date: string;
+    kv: string;
     contentHtml: string;
   };
 };
@@ -37,6 +39,22 @@ export default function Work({ workData }: WorkData) {
       <br />
       {workData.date}
       <br />
+      <div style={{ height: "500px", width: "100%" }}>
+        {(() => {
+          if (typeof workData.kv !== "undefined") {
+            const img = workData.kv.split(","); //カンマ区切りで複数枚指定可能
+            return (
+              <Image
+                src={img[0]}
+                alt="keyVisual"
+                layout="fill"
+                objectFit="contain"
+              />
+            );
+          }
+        })()}
+      </div>
+
       <div dangerouslySetInnerHTML={{ __html: workData.contentHtml }} />
     </Layout>
   );

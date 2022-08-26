@@ -67,43 +67,6 @@ const Home: NextPage = () => {
             </li>
           </ul>
         </div>
-
-        <div className={styles.item}>
-          <h2>Work in Progress</h2>
-          <p>ポートフォリオ制作に関連したnotionリンクはこちら</p>
-          <ul>
-            <li>
-              <a href="https://ripple-shock-17d.notion.site/Subject-9817da8d5fe44b81b969fe904d30e77c">
-                Subject
-              </a>
-            </li>
-            <li>
-              <a href="https://ripple-shock-17d.notion.site/Style-1570bc84ac004e57a6b53dfdedebb0cf">
-                Style
-              </a>
-            </li>
-            <li>
-              <a href="https://ripple-shock-17d.notion.site/Tech-1ec6fdea3e5e4e5cb06d6158fd1bf0de">
-                Tech
-              </a>
-            </li>
-            <li>
-              <a href="https://ripple-shock-17d.notion.site/Contents-e241f7816bbe4118bc55cb32f5e2c84e">
-                Contents
-              </a>
-            </li>
-            <li>
-              <a href="https://ripple-shock-17d.notion.site/Memo-7aebaf03fa57416f91ea5749e35adfd3">
-                Memo
-              </a>
-            </li>
-            <li>
-              <a href="https://ripple-shock-17d.notion.site/References-81f416bbc11a4c6a80f0e4c1552af734">
-                References
-              </a>
-            </li>
-          </ul>
-        </div>
       </main>
 
       <footer className={styles.footer}></footer>

@@ -1,6 +1,7 @@
 ---
 title: "NxPC.Live vol.56 メインビジュアル制作"
 date: "2022-07-04"
+kv: "/img/vol56_Asize.jpg"
 ---
 
 ### ToDo

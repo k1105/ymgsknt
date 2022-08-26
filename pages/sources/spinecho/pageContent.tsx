@@ -5,7 +5,7 @@ import kvBack from "./img/spinecho_kv_back.png";
 const PageContent: React.FC = () => {
   return (
     <div>
-      <h2>NxPC.Live vol.57 mail visual</h2>
+      <h2>NxPC.Live vol.57 main visual</h2>
       <p>
         medium: poster, flyer, web
         <br />

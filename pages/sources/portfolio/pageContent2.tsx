@@ -139,8 +139,7 @@ const PageContent2: React.FC = () => {
           </a>
         </li>
         <li>
-          <a href="https://cekai.jp/">CEKAI Corp., &quot;CEKAI&quot;</a>
-          cekai
+          <a href="https://cekai.jp/">CEKAI Corp., &quot;cekai&quot;</a>
         </li>
         <li>
           <a href="https://dskmtg.com/index.html">
@@ -165,6 +164,11 @@ const PageContent2: React.FC = () => {
         </li>
         <li>
           <a href="https://zenn.dev/">Zenn</a>
+        </li>
+        <li>
+          <a href="https://design-archive.pref.yamanashi.jp/">
+            山梨デザインアーカイブ
+          </a>
         </li>
       </ul>
       <style jsx>{`
