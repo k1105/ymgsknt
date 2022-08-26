@@ -31,8 +31,12 @@ export async function getStaticProps({ params }: Params) {
 }
 
 export default function Work({ workData }: WorkData) {
+  let img: string[] = [];
+  if (typeof workData.kv !== "undefined") {
+    img = workData.kv.split(","); //カンマ区切りで複数枚指定可能
+  }
   return (
-    <Layout>
+    <Layout ogp={img[0]}>
       {workData.title}
       <br />
       {workData.id}
