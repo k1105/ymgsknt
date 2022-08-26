@@ -3,11 +3,12 @@ import Head from "next/head";
 type Props = {
   children?: React.ReactNode;
   ogp?: string;
+  title?: string;
 };
 
 export const siteTitle = "Next.js Sample Website";
 
-export default function Layout({ children, ogp }: Props) {
+export default function Layout({ children, ogp, title }: Props) {
   return (
     <div>
       <Head>
@@ -19,6 +20,7 @@ export default function Layout({ children, ogp }: Props) {
         <meta property="og:image" content={ogp} />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
+        <title>{title} | Kanata Yamagishi Portfolio</title>
       </Head>
       {children}
     </div>
