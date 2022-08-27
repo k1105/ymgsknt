@@ -1,12 +1,45 @@
-import type { NextPage } from "next";
+import type { NextPage } from "next"; //どう使う？
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
-import PageContent from "./sources/spinecho/pageContent";
-import PageContent2 from "./sources/portfolio/pageContent2";
+import { fetchSourceSlugs } from "../lib/fetchSourceSlugs";
+import path from "path";
+import Image, { StaticImageData } from "next/image";
 
-const Home: NextPage = () => {
+type MetaData = {
+  title?: string;
+  kv: StaticImageData;
+  date?: string;
+};
+
+const sourcesDir = path.join(process.cwd(), "sources");
+
+export async function getStaticProps() {
+  const slugs = await fetchSourceSlugs();
+
+  const allMetaData = slugs.map((slug) => {
+    const metadata = require(`../sources/${slug}/index.mdx`).metadata;
+    return { ...metadata };
+  });
+
+  return { props: { ...allMetaData } };
+
+  // const allMetaData = slugs.map((slug) => {
+  //   const metadata = require(`../sources/${slug}/index.mdx`).metadata;
+  //   console.log(metadata);
+  //   return {
+  //     props: {
+  //       title: "hoge",
+  //     },
+  //   };
+  // });
+  // return {
+  //   allMetaData,
+  // };
+}
+
+export default function Home(allMetaData: MetaData[]) {
+  console.log(allMetaData[0]);
   return (
     <div className={styles.container}>
       <Head>
@@ -15,21 +48,18 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* {(() => {
-        const hoge = [];
-        for (let i = 0; i < 5; i++) {
-          hoge.push(<PageContent />);
-          hoge.push(<PageContent2 />);
-        }
-        return hoge;
-      })()} */}
-      <PageContent />
-      <PageContent2 />
-
       <main className={styles.main}>
         <div className={styles.item}>
           <h2>Pages</h2>
-
+          <div>
+            <Link href="work-mdx/hello">
+              <Image
+                src={allMetaData[0].kv}
+                alt={allMetaData[0].title}
+                placeholder="blur"
+              ></Image>
+            </Link>
+          </div>
           <ul>
             <li>
               <Link href="/research">Research</Link>
@@ -72,6 +102,4 @@ const Home: NextPage = () => {
       <footer className={styles.footer}></footer>
     </div>
   );
-};
-
-export default Home;
+}
