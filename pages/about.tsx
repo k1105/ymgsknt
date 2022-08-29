@@ -46,56 +46,6 @@ const About: NextPage = () => {
           <a href="https://twitter.com/ymgsknt">twitter</a>
         </li>
       </ul>
-      <div className="memo">
-        <h3>About This Page</h3>
-        <p>
-          自己紹介が掲載される.
-          notionとかにちょっとずつ書き込んでいって歩きながらとか書き進めていきます{" "}
-          <br />
-          <a href="https://ripple-shock-17d.notion.site/About-088f2c6e41184775b02a3c6f49c5ced8">
-            &gt; notion &lt;
-          </a>
-        </p>
-        <h3>Concern</h3>
-        <ul>
-          <li>肩書きに迷っている 候補：</li>
-          <ul>
-            <li>グラフィックデザイナー</li>
-            <li>エンジニア</li>
-            <li>デザインリサーチャー</li>
-            <li>クリエイティブコーダー</li>
-            <li>クリエイティブテクノロジスト（...え？）</li>
-            <li>デザインエンジニア</li>
-          </ul>
-          <li>
-            何に迷っているか：
-            <ul>
-              <li>肩書きが多いとダサい</li>
-              <li>肩書きが特殊だとダサい</li>
-              <li>
-                でもシンプルな肩書きだと外れたことができないんじゃないかとか思ってる
-              </li>
-            </ul>
-          </li>
-          <li>
-            職歴的なことをどこまで書くかで迷っている　一覧
-            <ul>
-              <li>2020.8-9 株式会社電通　夏期インターン</li>
-              <li>2021.7- 株式会社コネル</li>
-              <li>2022.1 株式会社電通　冬期インターン</li>
-            </ul>
-          </li>
-          <li>
-            何に迷っているか：
-            <ul>
-              <li>
-                なんか細かいことをいちいち書き込んでるなって思われたらダサい
-              </li>
-              <li>でも信頼感大事だから載せておきたい</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
     </div>
   );
 };

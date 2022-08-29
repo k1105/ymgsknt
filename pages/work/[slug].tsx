@@ -32,7 +32,7 @@ export default function Post({ slug, metadata }: PostProps) {
   return (
     <>
       <Head>
-        <title>{metadata.title}</title>
+        <title>{metadata.title} | Kanata Yamagishi</title>
       </Head>
       <div className="headingContainer">
         <h1>{metadata.title}</h1>

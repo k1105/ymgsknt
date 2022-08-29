@@ -14,13 +14,13 @@ export default function optimizedWidth({ width, ratio, windowWidth }: Props) {
       //window.innerWidth;
       return Math.max(
         Math.min(Math.sqrt(basisArea / ratio), width),
-        width * 0.5
+        width * 0.3
       );
     } else {
       //スマホはこれでいい
       return Math.max(
         Math.min(Math.sqrt(basisArea / ratio), width),
-        width * 0.9
+        width * 0.75
       );
     }
   }

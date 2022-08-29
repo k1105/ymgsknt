@@ -1,8 +1,14 @@
 import Image from "next/image";
-import img from "./vol56_169.jpg";
-import Layout from "../components/layout";
+import img from "./img/vol56_169.jpg";
+import TxtImage from "../../components/txtImage";
+import img2 from "./img/odden.png";
 
-<Image src={img} placeholder="blur"></Image>
+export const metadata = {
+  title:
+    "NxPc.Live vol.56 「屋台再開 あせだくつゆだく 暑い夏」メインビジュアル制作",
+  date: "2020-07-03",
+  kv: img,
+};
 
 ### 今回の進め方
 
@@ -27,6 +33,8 @@ import Layout from "../components/layout";
 - 全体的にコスト控え目にしながらいいところに落ち着けた
 - ゴールを見越した作業ができてた（特に終盤）＝タイポグラフィと合わせて Touch 作業、Touch で書き出したものに合わせてタイポを入れる、が双方向でできたから、終盤の作業についてはほとんど後戻りせずに詰められた。iPad 最強！
 
+<TxtImage img={img2} caption="キャプションのテスト" alt="altのテスト" />
+
 ### 良かったこと
 
 - 納期を守ったということ
@@ -49,9 +57,3 @@ NxPC パフォーマンスにて。これから残りの期間（=6/18 迄）ど
   - 幕間的？
 
 [1] 注釈テスト
-
-export default ({ children }) => (
-  <Layout ogp={img.src} title="hello">
-    {children}
-  </Layout>
-);
