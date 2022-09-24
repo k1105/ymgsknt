@@ -54,8 +54,11 @@ export default function Home(allMetaData: Array<MetaData>) {
                       <a className="thumbnailWrapper">
                         <p>{metadata.title}</p>
                         <Image
+                          width="1000"
+                          height="10px"
                           src={metadata.kv}
                           alt={metadata.title}
+                          objectFit={"cover"}
                           placeholder="blur"
                         ></Image>
                       </a>
@@ -69,15 +72,6 @@ export default function Home(allMetaData: Array<MetaData>) {
           <ul>
             <li>
               <Link href="/research">Research</Link>
-            </li>
-            <li>
-              {" "}
-              Works
-              <ul>
-                <li>NxPC.Live vol.57 メインビジュアル制作</li>
-                <li>School For Regenerative Design 展示物制作</li>
-                <li>個人制作: ChiritsumoChallenge</li>
-              </ul>
             </li>
             <li>
               <Link href="/sketch">Sketch</Link>

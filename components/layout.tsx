@@ -13,10 +13,7 @@ export default function Layout({ children, ogp, title }: Props) {
     <div>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="Learn how to build a personal website using Next.js"
-        />
+        <meta name="description" content="Kanata Yamagishi, design engineer" />
         <meta property="og:image" content={ogp} />
         <meta name="og:title" content={title} />
         <meta name="twitter:card" content="summary_large_image" />
