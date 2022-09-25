@@ -5,11 +5,13 @@ import Link from "next/link";
 import { fetchSourceSlugs } from "../lib/fetchSourceSlugs";
 import path from "path";
 import Image, { StaticImageData } from "next/image";
+import Tag from "../components/tag";
 
 type MetaData = {
   title?: string;
   kv: StaticImageData;
   date?: string;
+  tag?: string;
   id: string;
 };
 
@@ -50,18 +52,34 @@ export default function Home(allMetaData: Array<MetaData>) {
                 const metadata = { ...allMetaData[id] };
                 dom.push(
                   <Link href={`work/${metadata.id}`} key={metadata.id}>
-                    <div>
+                    <div style={{ marginBottom: "30px" }}>
                       <a className="thumbnailWrapper">
                         <p>{metadata.title}</p>
-                        <Image
-                          width="1000"
-                          height="10px"
-                          src={metadata.kv}
-                          alt={metadata.title}
-                          objectFit={"cover"}
-                          placeholder="blur"
-                        ></Image>
+                        <div>
+                          <Image
+                            width="1000"
+                            height="10px"
+                            src={metadata.kv}
+                            alt={metadata.title}
+                            objectFit={"cover"}
+                            placeholder="blur"
+                          ></Image>
+                        </div>
+                        <div>
+                          {(() => {
+                            const tags = [];
+                            const str = metadata.tag;
+                            console.log(str);
+                            if (typeof str == "string") {
+                              for (let txt of str.split(",")) {
+                                tags.push(<Tag>{txt}</Tag>);
+                              }
+                            }
+                            return tags;
+                          })()}
+                        </div>
                       </a>
+                      <hr />
                     </div>
                   </Link>
                 );

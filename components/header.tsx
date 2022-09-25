@@ -5,7 +5,7 @@ export const siteTitle = "Next.js Sample Website";
 export default function Header() {
   return (
     <header>
-      <p>KANATA YAMAGISHI</p>
+      <p>KANATA YAMAGISHI (((UnderConstruction)))</p>
 
       <Link href="/">
         <a>Database, </a>
