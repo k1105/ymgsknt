@@ -4,7 +4,7 @@ export const siteTitle = "Next.js Sample Website";
 
 export default function Header() {
   return (
-    <header style={{ marginBottom: "50px" }}>
+    <header style={{ marginBottom: "150px" }}>
       <div className="header-container">
         <div
           style={{

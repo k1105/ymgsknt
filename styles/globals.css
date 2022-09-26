@@ -19,6 +19,10 @@ a {
   box-sizing: border-box;
 }
 
+hr {
+  border: 0.5px solid black;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -26,5 +30,8 @@ a {
   body {
     color: white;
     background: black;
+  }
+  hr {
+    border: 0.5px solid white;
   }
 }

@@ -45,6 +45,9 @@ const About: NextPage = () => {
         <li>
           <a href="https://twitter.com/ymgsknt">twitter</a>
         </li>
+        <li>
+          <a href="https://github.com/k1105">github</a>
+        </li>
       </ul>
     </div>
   );
