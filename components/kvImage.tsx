@@ -1,6 +1,6 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
-import noImage from "../public/img/vol56_Asize.jpg";
+import noImage from "../public/img/noimage.jpeg";
 import GetWindowSize from "../lib/getWindowSize";
 import optimizedWidth from "../lib/optimizedWidth";
 type Props = {

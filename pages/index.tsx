@@ -6,6 +6,7 @@ import { fetchSourceSlugs } from "../lib/fetchSourceSlugs";
 import path from "path";
 import Image, { StaticImageData } from "next/image";
 import Tag from "../components/tag";
+import noImage from "../public/img/noimage.jpeg";
 
 type MetaData = {
   title?: string;
@@ -59,7 +60,7 @@ export default function Home(allMetaData: Array<MetaData>) {
                           <Image
                             width="1000"
                             height="10px"
-                            src={metadata.kv}
+                            src={metadata.kv ? metadata.kv : noImage}
                             alt={metadata.title}
                             objectFit={"cover"}
                             placeholder="blur"
