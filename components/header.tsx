@@ -14,10 +14,15 @@ export default function Header() {
             margin: "0 auto",
           }}
         >
-          <p>KANATA YAMAGISHI (((UnderConstruction)))</p>
+          <Link href="/">
+            <p>
+              <span style={{ fontWeight: "700" }}>KANATA YAMAGISHI</span>{" "}
+              (((UnderConstruction)))
+            </p>
+          </Link>
 
           <div className="router">
-            <Link href="/">
+            <Link href="/database">
               <p>Database</p>
             </Link>
             <Link href="/about">
@@ -41,6 +46,8 @@ export default function Header() {
           display: flex;
           width: 150px;
           justify-content: space-between;
+          font-size: 0.8rem;
+          line-height: 1.6rem;
         }
 
         @media (prefers-color-scheme: dark) {

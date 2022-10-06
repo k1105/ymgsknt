@@ -16,9 +16,8 @@ type MetaData = {
 
 export async function getStaticProps() {
   const slugs = await fetchSourceSlugs();
-  const targets = ["nxpc_vol57", "nxpc_vol56"];
 
-  const allMetaData = targets.map((slug) => {
+  const allMetaData = slugs.map((slug) => {
     const metadata = require(`../sources/${slug}/index.mdx`).metadata;
     return {
       ...metadata,
@@ -32,7 +31,7 @@ export async function getStaticProps() {
   };
 }
 
-export default function Home(allMetaData: Array<MetaData>) {
+export default function Database(allMetaData: Array<MetaData>) {
   return (
     <div className={styles.container}>
       <Head>
@@ -55,6 +54,8 @@ export default function Home(allMetaData: Array<MetaData>) {
                         <p>{metadata.title}</p>
                         <div>
                           <Image
+                            width="1000"
+                            height="10px"
                             src={metadata.kv ? metadata.kv : noImage}
                             alt={metadata.title}
                             objectFit={"cover"}
