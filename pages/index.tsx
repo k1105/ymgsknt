@@ -95,9 +95,6 @@ export default function Home(allMetaData: Array<MetaData>) {
             <li>
               <Link href="/sketch">Sketch</Link>
             </li>
-            <li>
-              <Link href="/about">About</Link>
-            </li>
           </ul>
         </div>
       </main>

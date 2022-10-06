@@ -4,8 +4,8 @@ export const siteTitle = "Next.js Sample Website";
 
 export default function Header() {
   return (
-    <header style={{ marginBottom: "150px" }}>
-      <div className="header-container">
+    <header style={{ marginBottom: "100px" }}>
+      <div className="container">
         <div
           style={{
             display: "flex",
@@ -16,7 +16,7 @@ export default function Header() {
         >
           <p>KANATA YAMAGISHI (((UnderConstruction)))</p>
 
-          <div>
+          <div className="router">
             <Link href="/">
               <p>Database</p>
             </Link>
@@ -28,7 +28,7 @@ export default function Header() {
         <hr style={{ margin: "0" }} />
       </div>
       <style jsx>{`
-        .header-container {
+        .container {
           position: fixed;
           top: 0;
           left: 0;
@@ -36,8 +36,15 @@ export default function Header() {
           z-index: 99;
           background: white;
         }
+
+        .router {
+          display: flex;
+          width: 150px;
+          justify-content: space-between;
+        }
+
         @media (prefers-color-scheme: dark) {
-          .header-container {
+          .container {
             background: black;
           }
         }
