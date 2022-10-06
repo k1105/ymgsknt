@@ -41,6 +41,7 @@ export default function TxtImage({ img, alt, caption }: Props) {
         .imageContainer {
           width: ${imageWidth}px;
           margin: 0 auto;
+          margin-bottom: 10px;
         }
       `}</style>
     </div>
