@@ -55,6 +55,8 @@ export default function Post({ slug, metadata }: PostProps) {
           .articleContainer {
             width: 840px;
             margin: 0 auto;
+            font-size: 14px;
+            line-height: 22px;
           }
 
         @media screen and (max-width: 960px) {
