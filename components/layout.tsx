@@ -13,9 +13,17 @@ export default function Layout({ children, ogp, title }: Props) {
     <div>
       <Head>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="description" content="Kanata Yamagishi, design engineer" />
+        <meta
+          name="og:description"
+          content="Kanata Yamagishi, design engineer"
+        />
         <meta property="og:image" content={ogp} />
-        <meta name="og:title" content={title} />
+        <meta
+          name="og:title"
+          content={`${title} | Kanata Yamagishi Portfolio`}
+        />
         <meta name="twitter:card" content="summary_large_image" />
         <title>{title} | Kanata Yamagishi Portfolio</title>
       </Head>
