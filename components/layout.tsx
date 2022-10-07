@@ -20,12 +20,9 @@ export default function Layout({ children, ogp, title }: Props) {
           content="Kanata Yamagishi, design engineer"
         />
         <meta property="og:image" content={ogp} />
-        <meta
-          name="og:title"
-          content={`${title} | Kanata Yamagishi Portfolio`}
-        />
+        <meta name="og:title" content={`${title} | Kanata Yamagishi`} />
         <meta name="twitter:site" content="@ymgsknt" />
-        <title>{title} | Kanata Yamagishi Portfolio</title>
+        <title>{title} | Kanata Yamagishi</title>
       </Head>
       {children}
     </div>
