@@ -41,7 +41,7 @@ export default function Home(allMetaData: Array<MetaData>) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
+      <main>
         <div className={styles.item}>
           <div>
             {((allMetaData: Array<MetaData>) => {
