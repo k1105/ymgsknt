@@ -33,26 +33,33 @@ export default function Post({ slug, metadata }: PostProps) {
   return (
     <>
       <Layout title={metadata.title} ogp={metadata.kv?.src}>
-        <div className="headingContainer">
-          <h1>{metadata.title}</h1>
-          <small>{metadata.date}</small>
+        <div className="heading">
+          <h1 className="title">{metadata.title}</h1>
+          <small className="date">{metadata.date}</small>
         </div>
         <div>
-          <KvImage img={metadata.kv} alt="hogehoge" basis={kvBasis} />
+          <KvImage img={metadata.kv} alt="fallback" basis={kvBasis} />
         </div>
-        <article className="articleContainer">
+        <article className="article">
           <Mdx />
         </article>
       </Layout>
       <style jsx>
         {`
-            .headingContainer {
+            .title {
+              font-size: 18px;
+              line-height: 1.5rem;
+            }
+            .date {
+              color: #bbb;
+            }
+            .heading {
              width: 960px;
              text-align: center;
              margin: 10px auto;   
             }
         
-          .articleContainer {
+          .article {
             width: 840px;
             margin: 0 auto;
             font-size: 14px;
@@ -60,10 +67,11 @@ export default function Post({ slug, metadata }: PostProps) {
           }
 
         @media screen and (max-width: 960px) {
-            .headingContainer {
+            .heading {
                 width: 90vw;
+                text-align: left;
             }
-          .articleContainer {
+          .article {
             width: 90vw;
           }
         `}
