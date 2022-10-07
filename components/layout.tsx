@@ -24,7 +24,7 @@ export default function Layout({ children, ogp, title }: Props) {
           name="og:title"
           content={`${title} | Kanata Yamagishi Portfolio`}
         />
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@ymgsknt" />
         <title>{title} | Kanata Yamagishi Portfolio</title>
       </Head>
       {children}
