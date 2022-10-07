@@ -47,7 +47,7 @@ export default function Post({ slug, metadata }: PostProps) {
       <style jsx>
         {`
             .title {
-              font-size: 18px;
+              font-size: 24px;
               line-height: 1.5rem;
             }
             .date {
@@ -67,6 +67,10 @@ export default function Post({ slug, metadata }: PostProps) {
           }
 
         @media screen and (max-width: 960px) {
+            .title {
+              font-size: 20px;
+              line-height: 1.5rem;
+            }
             .heading {
                 width: 90vw;
                 text-align: left;
