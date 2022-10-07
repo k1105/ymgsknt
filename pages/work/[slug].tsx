@@ -4,6 +4,7 @@ import Head from "next/head";
 import { StaticImageData } from "next/image";
 import KvImage from "../../components/kvImage";
 import GetWindowSize from "../../lib/getWindowSize";
+import Layout from "../../components/layout";
 
 type PostProps = {
   slug: string;
@@ -31,19 +32,18 @@ export default function Post({ slug, metadata }: PostProps) {
   }
   return (
     <>
-      <Head>
-        <title>{metadata.title} | Kanata Yamagishi</title>
-      </Head>
-      <div className="headingContainer">
-        <h1>{metadata.title}</h1>
-        <small>{metadata.date}</small>
-      </div>
-      <div>
-        <KvImage img={metadata.kv} alt="hogehoge" basis={kvBasis} />
-      </div>
-      <article className="articleContainer">
-        <Mdx />
-      </article>
+      <Layout title={metadata.title} ogp={metadata.kv?.src}>
+        <div className="headingContainer">
+          <h1>{metadata.title}</h1>
+          <small>{metadata.date}</small>
+        </div>
+        <div>
+          <KvImage img={metadata.kv} alt="hogehoge" basis={kvBasis} />
+        </div>
+        <article className="articleContainer">
+          <Mdx />
+        </article>
+      </Layout>
       <style jsx>
         {`
             .headingContainer {
