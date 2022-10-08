@@ -34,7 +34,7 @@ export default function TxtImage({ img, alt, caption }: Props) {
     <div>
       <div className="imageContainer">
         <Image src={img} alt={alt} placeholder="blur" />
-        <small>{caption}</small>
+        <small style={{ color: "#bbb" }}>{caption}</small>
       </div>
 
       <style jsx>{`
