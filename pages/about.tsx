@@ -17,7 +17,7 @@ const About: NextPage = () => {
       <p>kntymgs1105(at)gmail.com (at)=@</p>
       <h3>BIO</h3>
       <p>
-        1998.11 - born in Chiba, Japan <br />
+        1998.11 - born in Tokyo, Japan <br />
         2017 - 2022 Department of Computer <br />
         Science, Tokyo University of Science (Tokyo, Japan) <br />
         2022 - Department of Media Creation master course in Institute of

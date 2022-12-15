@@ -1,6 +1,5 @@
 import { fetchSourceSlugs } from "../../lib/fetchSourceSlugs";
 import dynamic from "next/dynamic";
-import Head from "next/head";
 import { StaticImageData } from "next/image";
 import KvImage from "../../components/kvImage";
 import GetWindowSize from "../../lib/getWindowSize";
